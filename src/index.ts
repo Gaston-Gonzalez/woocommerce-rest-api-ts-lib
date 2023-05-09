@@ -213,7 +213,7 @@ export default class WooCommerceRestApi<T extends WooRestApiOptions> {
         let url =
       this._opt.url.slice(-1) === "/" ? this._opt.url : this._opt.url + "/";
 
-        url = url + api + this._opt.version + "/" + endpoint;
+        url = url + api + this._opt.version + this._opt.removeSlash ? "" : "/" + endpoint;
         // Add id param to url
         if (params.id) {
             url = url + "/" + params.id;
