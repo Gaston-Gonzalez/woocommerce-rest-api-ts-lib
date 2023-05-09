@@ -108,6 +108,7 @@ export default class WooCommerceRestApi<T extends WooRestApiOptions> {
         this._opt.encoding = opt.encoding || "utf-8";
         this._opt.queryStringAuth = opt.queryStringAuth || false;
         this._opt.classVersion = "0.0.2";
+        this._opt.removeSlash = opt.removeSlash || false;
     }
 
     /**
