@@ -72,6 +72,9 @@ export interface IWooRestApiOptions<T> extends IWooCredentials {
 
   /* Https or Http */
   isHttps?: boolean;
+  
+  /* Remove extra URL slash */
+  removeSlash?: boolean;
 }
 
 /* Start of the Types */
